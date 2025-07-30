@@ -5,7 +5,5 @@ services:
     plan: free
     branch: main
     region: oregon
-    dockerfilePath: book_hub/Dockerfile
-    buildFilter:
-      paths:
-        - book_hub/**
+    dockerfilePath: Dockerfile
+    buildCommand: docker build -t bookhub-backend .
