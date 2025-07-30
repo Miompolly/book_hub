@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: bookhub-backend
+    env: docker
+    plan: free
+    branch: main
+    region: oregon
+    dockerfilePath: book_hub/Dockerfile
+    buildFilter:
+      paths:
+        - book_hub/**
